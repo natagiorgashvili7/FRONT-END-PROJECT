@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FoodZero menu</title>
+  <link rel="stylesheet" href="./assets/styles/style.css">
+  <link rel="stylesheet" href="./assets/styles/reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rufina:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <header class="header_class">
+      <div class="left_side">
+        <img src="assets/images/Logo.svg" alt="logo" width="115" height="60">
+
+        <div id="burger-menu">
+          <span></span>
+        </div>
+      </div>
+        <div id="overlay-menu">
+          <nav>
+            <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="menu.html">MENU</a></li>
+              <li><a href="about.html">ABOUT</a></li>
+              <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+          </nav>
+        </div>
+
+      <div class="right_side">
+        <a href="tel:+86852346000">+86 852 346 000</a>
+        <a class="header_text" href="contact.html#reservation-container">Reservations</a>
+      </div>
+  </header>
+
+  <main>
+
+    <section class="menu_intro">
+      <h1>View Our New Menu</h1>
+    </section>
+    <div id="menu-container"></div>
+
+    <div class="reservation-container">
+        <h1>Make a Reservation</h1>
+        <p class="subtitle">Get in touch with restaurant</p>
+
+        <form class="reservation-form">
+            <div class="input-group">
+                <input type="text" class="custom-input">
+                
+                <select class="custom-input">
+                    <option>6:00 pm</option>
+                    <option>7:00 pm</option>
+                    <option>8:00 pm</option>
+                </select>
+
+                <select class="custom-input">
+                    <option>2 Person</option>
+                    <option>3 Person</option>
+                    <option>4 Person</option>
+                </select>
+            </div>
+
+            <button type="submit" value="dd/mm/yy" class="book-btn">Book Now</button>
+        </form>
+    </div>
+    <div id="cookieBox" class="cookie-box">
+      <p>We use cookies to improve your experience.</p>
+      <button onclick="acceptCookies()">Accept</button>
+  </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  </main>
+
+  <footer>
+    <section class="footer">
+      <div class="info">
+          <h3>Contact</h3>
+          <a href="telto:+1+86 852 346 000">+1+86 852 346 000</a>
+          <a href="mailto:info@foodzero.com">info@foodzero.com</a>
+      </div>
+
+      <section class="newsletter-banner">
+          <div class="container">
+            <h2>Never Miss a Recipe</h2>
+            <form class="subscribe-form">
+              <div class="input-group">
+                <input type="email" placeholder="Email Address" required aria-label="Email Address">
+                <button type="submit">Subscribe</button>
+              </div>
+            </form>
+            
+            <p>Join our subscribers and get best recipe delivered each week!</p>
+          </div>
+        </section>
+      </section>
+  </footer>
+
+  <script src="./assets/script/script.js"></script>
+
+</body>
+</html>
