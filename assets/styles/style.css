@@ -861,6 +861,14 @@ button {
     .row span {
     font-size: 12px;
   }
+  .process img {
+    max-width: 270px;
+    margin-right: 20px;
+  }
+  .process h2 {
+    font-size: 35px;
+    margin-right: 10px;
+  }
 }
 
 @media (max-width: 320px) {
