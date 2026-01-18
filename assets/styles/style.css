@@ -730,6 +730,7 @@ button {
   padding: 15px;
   display: flex;
   justify-content: space-between;
+  z-index: 100;
 }
 .opt {
   display: flex;
