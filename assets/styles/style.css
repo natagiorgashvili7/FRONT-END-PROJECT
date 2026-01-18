@@ -606,6 +606,7 @@ button:hover {
 .photo1 {
   display: flex;
   justify-content: center;
+  text-align: center;
   align-items: center;
 }
 .process h2 {
@@ -638,6 +639,7 @@ button:hover {
   color: black;
 }
 .dotted-line {
+  display: flex;
   border: none;
   border-top: 3px dotted #333;
   margin: 50px 0;
@@ -849,7 +851,11 @@ button {
     box-sizing: border-box;
   }
   .menu_intro {
-    max-width: 90%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  .contact_intro {
+    max-width: 100%;
     box-sizing: border-box;
   }
 }
@@ -876,8 +882,26 @@ button {
     max-width: 240px;
     width: 100%;
   }
+  .process img {
+    max-width: 200px;
+    margin-right: 20px;
+  }
   .process h2 {
     font-size: 40px;
+    margin-right: 20px;
+  }
+  .row span {
+    font-size: 10px;
+  }
+  .photo1 img {
+    max-width: 200px;
+    margin-right: 20px;
+  }
+  .top_about {
+    gap:10px;
+  }
+  .dotted-line {
+    display: none;
   }
 
 }

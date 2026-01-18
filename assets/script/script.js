@@ -14,8 +14,6 @@ links.forEach(link => {
   });
 });
 
-
-
 // button:
 let mybutton = document.getElementById("myBtn");
 window.onscroll = function() {scrollFunction()};
