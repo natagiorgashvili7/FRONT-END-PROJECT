@@ -858,6 +858,9 @@ button {
     max-width: 100%;
     box-sizing: border-box;
   }
+    .row span {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 320px) {
@@ -899,9 +902,6 @@ button {
   }
   .top_about {
     gap:10px;
-  }
-  .dotted-line {
-    display: none;
   }
 
 }
