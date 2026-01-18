@@ -14,6 +14,8 @@ links.forEach(link => {
   });
 });
 
+
+
 // button:
 let mybutton = document.getElementById("myBtn");
 window.onscroll = function() {scrollFunction()};
@@ -28,6 +30,7 @@ function scrollFunction() {
 function topFunction() {
   document.documentElement.scrollTop = 0;
 }
+
 // fetch
 fetch("https://www.themealdb.com/api/json/v1/1/search.php?s=chicken")
   .then(response => response.json())
@@ -46,16 +49,29 @@ fetch("https://www.themealdb.com/api/json/v1/1/search.php?s=chicken")
 });
 
 // cookies
-const cookieBox = document.getElementById("cookieBox");
-
+document.addEventListener("DOMContentLoaded", function () {
+    const cookieBox = document.getElementById("cookieBox");
+    const cookieChoice = localStorage.getItem("cookiesAccepted");
+    if (cookieChoice !== null) {
+        cookieBox.style.display = "none";
+    }
+});
 function acceptCookies() {
-  localStorage.setItem("cookiesAccepted", "true");
-  cookieBox.style.display = "none";
+    localStorage.setItem("cookiesAccepted", "true");
+    hideCookieBox();
 }
 
-if (localStorage.getItem("cookiesAccepted")) {
-  cookieBox.style.display = "none";
+function declineCookies() {
+    localStorage.setItem("cookiesAccepted", "false");
+    hideCookieBox();
 }
+function hideCookieBox() {
+    const cookieBox = document.getElementById("cookieBox");
+    if (cookieBox) {
+        cookieBox.style.display = "none";
+    }
+}
+
 
 // form validation
 const form = document.getElementById("reservationForm");

@@ -21,7 +21,19 @@
   align-items: center;
   gap: 20px;
 }
+.right_side a {
+  color: #FFFFFF;
+  font-size: 26px;
+}
+.header_text {
+  color: white;
+  border: 2px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+/* menu  */
 #overlay-menu {
   position: fixed;
   top: 0;
@@ -29,6 +41,7 @@
   width: 100%;
   height: 100%;
   background-color: #233000;
+  z-index: 90;
   justify-content: center;
   align-items: center;
   display: none;
@@ -101,17 +114,7 @@
 body.menu-open {
     overflow: hidden;
 }
-.right_side a {
-  color: #FFFFFF;
-  font-size: 26px;
-}
-.header_text {
-  color: white;
-  border: 2px solid;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
 
 /* index main */
 .first_section {
@@ -133,16 +136,12 @@ body.menu-open {
   color: #fff;
   margin-bottom: 20px;
 }
-
-.first_section p {
-  color: #ccc;
-  max-width: 400px;
-}
-
 .stake_photo img {
   width: 370px;
   height: auto;
 }
+
+
 .second_section {
   display: flex;
   justify-content: center;
@@ -153,7 +152,6 @@ body.menu-open {
 main {
   background-color: #233000;
 }
-
 .veg {
   display: flex;
   flex-direction: column;
@@ -184,7 +182,6 @@ main {
   font-family: "Rufina", serif;
   color: #FFFFFF;
 }
-
 .first_page_menu {
   background-image: url("../images/menu_bac.png");
   background-size: cover;
@@ -200,7 +197,6 @@ main {
 
 .first_page_menu h2 {
   font-size: 60px;
-  margin-bottom: 40px;
   margin-top: 60px;
   text-align: left;
   color: black;
@@ -235,22 +231,21 @@ main {
 
 .cost {
   order: 1;
+  display: flex;
   text-align: right;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 25px;
   margin-bottom: 5px;
   color: black;
 }
-
-
 .name {
   order: 2;
 }
 
 .name h3 {
-  font-size: 1.8rem;
+  font-size: 30px;
   display: flex;
-  text-align: center;
+  text-align: left;
   font-weight: 500;
   max-width: 80%;
   color: black;
@@ -308,19 +303,20 @@ main {
   text-align: center;  
   padding: 120px 20px;
   background-color: #233000;
+  margin: none;
 }
 
 .reservation-container h1 {
   font-size: 48px;
   font-weight: 700;
-  margin-bottom: 10px;
+  padding-bottom: 10px;
   color: white;
 }
 
 .subtitle {
   font-size: 14px;
   color: white;
-  margin-bottom: 60px;
+  padding-bottom: 60px;
 }
 
 .reservation-form {
@@ -332,7 +328,7 @@ main {
 .input-group {
   display: flex;
   justify-content: center ;
-  margin-bottom: 50px;
+  padding-bottom: 50px;
   width: 100%;
   gap: 30px;
   
@@ -380,25 +376,25 @@ main {
 }
 footer {
   background-color: #1c2503;
-  padding: 80px 60px 40px;
+  padding: 20px 80px 60px 40px;
   color: white;
   font-family: "Rufina", serif;
 }
-
 .footer {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   gap: 80px;
   max-width: 1200px;
-  padding-top: 50px;
-  gap: 90px;
 }
 
 .info h3 {
   font-size: 28px;
   margin-bottom: 20px;
   color: white;
+}
+.info {
+  padding: 30px;
 }
 
 .info a {
@@ -413,7 +409,7 @@ footer {
   text-decoration: underline;
 }
 .newsletter-banner {
-  padding: 0;
+  padding: 30px;
   background: none;
   max-width: 420px;
 }
@@ -460,7 +456,7 @@ button:hover {
 .newsletter-banner p {
   margin-top: 14px;
   font-size: 14px;
-  color: #d6d6d6;
+  color: #d6d6d6; 
 }
 #myBtn {
   display: none;
@@ -482,6 +478,8 @@ button:hover {
   background-color: #555;
 }
 
+
+/* menu  */
 .meal-card {
   min-width: 300px;
   padding: 15px;
@@ -508,7 +506,7 @@ button:hover {
   gap: 20px;
   flex-wrap: wrap;
 }
-/* menu  */
+
 .menu_intro {
   background-image: url("../images/menu_background.jpg");
   display: inline-block;
@@ -535,6 +533,8 @@ button:hover {
   justify-content: center;
 
 }
+
+/* about */
 .about_intro {
   background-image: url("../images/about_background.jpg");
   display: inline-block;
@@ -686,17 +686,6 @@ button:hover {
   padding: 8px 0;
   border-bottom: 1px dotted #999;
 }
-.reservation-container {
-  max-width: 600px;
-  margin: 50px auto;
-  padding: 40px;
-  background:#233000;
-}
-
-.reservation-container h1 {
-  text-align: center;
-  margin-bottom: 30px;
-}
 
 #reservationForm {
   display: flex;
@@ -739,6 +728,10 @@ button {
   padding: 15px;
   display: flex;
   justify-content: space-between;
+}
+.opt {
+  display: flex;
+  gap:20px;
 }
 
 
@@ -863,7 +856,8 @@ button {
 
 @media (max-width: 320px) {
   img {
-    max-width: 100%;
+    max-width: 250px;
+    align-items: center;
   }
   .first_section {
     padding: 24px 16px;
@@ -881,6 +875,9 @@ button {
   .stake_photo img {
     max-width: 240px;
     width: 100%;
+  }
+  .process h2 {
+    font-size: 40px;
   }
 
 }
