@@ -699,9 +699,8 @@ button:hover {
 #reservationForm select {
   padding: 12px;
   border: 1px solid white;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 }
-
 button {
   padding: 12px;
   background: #596600;
